@@ -45,6 +45,10 @@ SET(PROJECT_COMPATIBILITY_VERSION AnyNewerVersion)
 SET(PROJECT_USE_KEYWORD_LINK_LIBRARIES TRUE)
 SET(DOXYGEN_USE_TEMPLATE_CSS TRUE)
 
+if (WIN32)
+  link_directories(C:/local/boost_1_74_0/lib64-msvc-14.2)
+endif()
+
 # ----------------------------------------------------
 # --- OPTIONS  ---------------------------------------
 # Need to be set before including base.cmake
